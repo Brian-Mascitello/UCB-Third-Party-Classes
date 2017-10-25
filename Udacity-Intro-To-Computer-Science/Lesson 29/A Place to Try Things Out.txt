@@ -1,0 +1,10 @@
+# Use this to try out anything you like. Use print to display your answer
+
+# when you press the "Test Run" button.
+
+# Use the "Reset" button to reset the screen
+
+
+print('Lesson 29 Complete!')
+
+# Lesson 29 is just a virtual test environment, mainly intended to check outputs of the project in Lesson 30.
