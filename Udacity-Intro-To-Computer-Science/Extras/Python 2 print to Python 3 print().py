@@ -92,7 +92,10 @@ for line in python_2_code.splitlines():
 
     if line.find('print') != -1:
         line = line.replace('print ', 'print(', 1)
-        line = line.replace(')', '))', 1)
+        if line.find(')') != -1:
+            line = line.replace(')', '))', 1)
+        else:
+            line += ')'
     copy_string += line + '\n'
     print(line)
 
