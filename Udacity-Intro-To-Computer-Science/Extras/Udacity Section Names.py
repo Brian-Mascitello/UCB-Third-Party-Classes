@@ -19,7 +19,7 @@ raw_path = r'C:\Users\Brian\Downloads\HTML.txt'
 fixed_path = raw_path.replace('\\', '/')
 
 # Open the file, read it's contents, and convert to text to make regex easier.
-file = open(fixed_path, encoding='utf8')
+file = open(fixed_path, encoding='utf8', errors='ignore')
 content = file.read()
 
 # Positive Lookbehind (?<=a title=\") finds the start of the anchor titles of the sections.
