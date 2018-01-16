@@ -1,0 +1,21 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+Your response goes here!
+
+1) What new skills have you learned?
+Since I have taken a web development course before this has mostly been a refresher so far. I have been using PyCharm to organize my own notes and to help code the few examples so far, but I would like to find an active web editor for future work. The website https://developer.mozilla.org/en-US/ has been really useful for looking things up as I go along.
+
+2) What has been easy?
+The whole class so far has been easy. Lots of installing, like Slack and the Udacity Feedback chrome extension were simple and I’m glad I have them. All of the code so far has been easy.
+
+3) What has been difficult?
+I have been busy applying for jobs and trying to make lifestyle improvements to lose weight. Making time for the class has been the most difficult part, but I think I am still on pace to finish ahead of schedule. I just wish I had more of a jump start to assist other students.
+
+4) How have you used the problem-solving strategies from the first project to overcome challenges so far?
+I frequently check the work I am doing by saving the text file and viewing it in a chrome to ensure the changes I have made are correct. I research the things I do not know, like how to make a superscript was <sup>content</sup>. Otherwise it has been pretty smooth sailing so far!
