@@ -62,7 +62,7 @@ def add_to_index(index, keyword, url):
 
 def get_page(url):
     try:
-        if url == "http://www.udacity.com/cs101x/index.html":
+        if url == "http://www.udacity.com/cs101x/Link to a Stylesheet.html":
             return '''<html> <body> This is a test page for learning to crawl!
 <p> It is a good idea to
 <a href="http://www.udacity.com/cs101x/crawling.html">
@@ -77,7 +77,7 @@ quite good at  <a href="http://www.udacity.com/cs101x/kicking.html">kicking</a>.
 
         elif url == "http://www.udacity.com/cs101x/walking.html":
             return '''<html> <body> I cant get enough
-<a href="http://www.udacity.com/cs101x/index.html">crawling</a>!</body></html>'''
+<a href="http://www.udacity.com/cs101x/Link to a Stylesheet.html">crawling</a>!</body></html>'''
 
         elif url == "http://www.udacity.com/cs101x/flying.html":
             return '<html><body>The magic words are Squeamish Ossifrage!</body></html>'
@@ -142,7 +142,7 @@ def lookup(index, keyword):
 
 
 # Here is an example showing a sequence of interactions:
-index = crawl_web('http://www.udacity.com/cs101x/index.html')
+index = crawl_web('http://www.udacity.com/cs101x/Link to a Stylesheet.html')
 print(lookup(index, 'good'))
 # >>> [['http://www.udacity.com/cs101x/index.html', 0],
 # >>> ['http://www.udacity.com/cs101x/crawling.html', 0]]

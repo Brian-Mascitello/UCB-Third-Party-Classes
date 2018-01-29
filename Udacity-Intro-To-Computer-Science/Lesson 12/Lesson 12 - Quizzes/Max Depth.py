@@ -32,7 +32,7 @@
 
 def get_page(url):
     try:
-        if url == "http://www.udacity.com/cs101x/index.html":
+        if url == "http://www.udacity.com/cs101x/Link to a Stylesheet.html":
             return ('<html> <body> This is a test page for learning to crawl! '
                     '<p> It is a good idea to '
                     '<a href="http://www.udacity.com/cs101x/crawling.html">learn to '
@@ -47,7 +47,7 @@ def get_page(url):
                     '</body> </html>')
         elif url == "http://www.udacity.com/cs101x/walking.html":
             return ('<html> <body> I cant get enough '
-                    '<a href="http://www.udacity.com/cs101x/index.html">crawling</a>! '
+                    '<a href="http://www.udacity.com/cs101x/Link to a Stylesheet.html">crawling</a>! '
                     '</body> </html>')
         elif url == "http://www.udacity.com/cs101x/flying.html":
             return ('<html> <body> The magic words are Squeamish Ossifrage! '
@@ -155,11 +155,11 @@ def crawl_web(seed, max_depth):
 # >>> ['A1', 'C1', 'B1', 'E1', 'D1', 'F1']
 # (May be in any order)
 
-print(crawl_web("http://www.udacity.com/cs101x/index.html", 0))
+print(crawl_web("http://www.udacity.com/cs101x/Link to a Stylesheet.html", 0))
 
-print(crawl_web("http://www.udacity.com/cs101x/index.html", 1))
+print(crawl_web("http://www.udacity.com/cs101x/Link to a Stylesheet.html", 1))
 
-print(crawl_web("http://www.udacity.com/cs101x/index.html", 50))
+print(crawl_web("http://www.udacity.com/cs101x/Link to a Stylesheet.html", 50))
 
 print(crawl_web("http://top.contributors/forbiddenvoid.html", 2))
 

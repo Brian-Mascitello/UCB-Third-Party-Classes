@@ -26,7 +26,7 @@ def crawl_web(seed):  # returns index, graph of outlinks
 
 
 cache = {
-    'http://udacity.com/cs101x/urank/index.html': """<html>
+    'http://udacity.com/cs101x/urank/Link to a Stylesheet.html': """<html>
 <body>
 <h1>Dave's Cooking Algorithms</h1>
 <p>
@@ -199,10 +199,10 @@ def lookup(index, keyword):
         return None
 
 
-index, graph = crawl_web('http://udacity.com/cs101x/urank/index.html')
+index, graph = crawl_web('http://udacity.com/cs101x/urank/Link to a Stylesheet.html')
 
-if 'http://udacity.com/cs101x/urank/index.html' in graph:
-    print(graph['http://udacity.com/cs101x/urank/index.html'])
+if 'http://udacity.com/cs101x/urank/Link to a Stylesheet.html' in graph:
+    print(graph['http://udacity.com/cs101x/urank/Link to a Stylesheet.html'])
 # >>> ['http://udacity.com/cs101x/urank/hummus.html',
 # 'http://udacity.com/cs101x/urank/arsenic.html',
 # 'http://udacity.com/cs101x/urank/kathleen.html',
