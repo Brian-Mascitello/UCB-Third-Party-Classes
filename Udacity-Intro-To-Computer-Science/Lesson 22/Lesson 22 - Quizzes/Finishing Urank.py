@@ -25,7 +25,7 @@ def compute_ranks(graph):
 
 
 cache = {
-    'http://udacity.com/cs101x/urank/Link to a Stylesheet.html': """<html>
+    'http://udacity.com/cs101x/urank/index.html': """<html>
 <body>
 <h1>Dave's Cooking Algorithms</h1>
 <p>
@@ -217,7 +217,7 @@ def lookup(index, keyword):
         return None
 
 
-index, graph = crawl_web('http://udacity.com/cs101x/urank/Link to a Stylesheet.html')
+index, graph = crawl_web('http://udacity.com/cs101x/urank/index.html')
 ranks = compute_ranks(graph)
 print(ranks)
 

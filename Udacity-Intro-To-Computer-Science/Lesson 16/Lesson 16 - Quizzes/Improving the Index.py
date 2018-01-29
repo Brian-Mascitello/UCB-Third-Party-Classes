@@ -23,7 +23,7 @@ def add_to_index(index, keyword, url):
 
 def get_page(url):
     try:
-        if url == "http://www.udacity.com/cs101x/Link to a Stylesheet.html":
+        if url == "http://www.udacity.com/cs101x/index.html":
             return '''<html> <body> This is a test page for learning to crawl!
 <p> It is a good idea to
 <a href="http://www.udacity.com/cs101x/crawling.html">
@@ -39,7 +39,7 @@ quite good at  <a href="http://www.udacity.com/cs101x/kicking.html">kicking</a>.
 
         elif url == "http://www.udacity.com/cs101x/walking.html":
             return '''<html> <body> I cant get enough
-<a href="http://www.udacity.com/cs101x/Link to a Stylesheet.html">crawling</a></body></html>'''
+<a href="http://www.udacity.com/cs101x/index.html">crawling</a></body></html>'''
 
         elif url == "http://www.udacity.com/cs101x/flying.html":
             return '''<html>
@@ -104,7 +104,7 @@ def lookup(index, keyword):
     return None
 
 
-index = crawl_web("http://www.udacity.com/cs101x/Link to a Stylesheet.html")
+index = crawl_web("http://www.udacity.com/cs101x/index.html")
 print(lookup(index, "is"))
 
 # >>> ['http://www.udacity.com/cs101x/index.html']
