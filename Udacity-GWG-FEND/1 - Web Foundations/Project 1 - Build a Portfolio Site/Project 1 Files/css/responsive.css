@@ -3,23 +3,39 @@
   flex-wrap: wrap;
 }
 
-
 /*
  *
  * Mobile: Google Nexus 5
  *
  */
 
-@media screen and (min-width: 360px) {
-  .header_name {
-    font-size: 160%;
+@media screen and (max-width: 360px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
   }
-  .header_proud,
-  .header_work {
-    font-size: 140%;
+
+
+  .header_name, .header_proud {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
   }
 }
 
+
+@media screen and (min-width: 360px) {
+  .header_name {
+    font-size: 180%;
+  }
+
+
+  .header_proud,
+  .header_work {
+    font-size: 130%;
+  }
+}
 
 /*
  *
@@ -31,23 +47,30 @@
   .header_name {
     font-size: 320%;
   }
+
+
   .header_proud,
   .header_work {
     font-size: 210%;
   }
+
+
   .pixel_art_maker {
     width: 50%;
   }
+
+
   .animal_trading_card {
     width: 50%;
   }
+
+
   .mockup_article {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
 }
-
 
 /*
  *
@@ -61,22 +84,34 @@
     margin-right: auto;
     width: 1024px;
   }
+
+
   .header_name {
     font-size: 400%;
   }
+
+
   .header_proud,
   .header_work {
     font-size: 300%;
   }
+
+
   .pixel_art_maker {
     width: 33.33%;
   }
+
+
   .animal_trading_card {
     width: 33.33%;
   }
+
+
   .mockup_article {
     width: 33.33%;
   }
+
+
   main,
   .nav,
   .content {

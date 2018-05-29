@@ -6,12 +6,14 @@ html {
   height: 100%;
 }
 
+
 body {
   color: #2d3c49;
   font-family: 'Volkhov', serif;
   font-size: 16px;
   line-height: 1.2em;
 }
+
 
 h1,
 h2,
@@ -20,6 +22,7 @@ h4,
 h5 {
   margin: 0;
 }
+
 
 header,
 nav,
@@ -31,6 +34,7 @@ div {
   color: #2d3c49;
 }
 
+
 nav,
 a,
 button {
@@ -38,12 +42,12 @@ button {
   min-width: 48px;
 }
 
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 
 /*
  *
@@ -58,11 +62,11 @@ ul {
   width: 100%;
 }
 
+
 .header_logo {
   float: left;
-  height: 150px;
-  width: 150px;
 }
+
 
 .header_name {
   font-size: 120%;
@@ -71,6 +75,7 @@ ul {
   text-align: right;
 }
 
+
 .header_proud {
   font-size: 100%;
   line-height: 120%;
@@ -78,7 +83,6 @@ ul {
   text-align: right;
   vertical-align: bottom;
 }
-
 
 /*
  *
@@ -93,7 +97,6 @@ main {
   margin-right: auto;
 }
 
-
 /*
  *
  * Picture
@@ -105,7 +108,6 @@ main {
   margin-right: auto;
 }
 
-
 /*
  *
  * Featured Work
@@ -116,11 +118,13 @@ main {
   border-top: 10px solid #7d97ad;
 }
 
+
 .header_work {
   font-size: 100%;
   line-height: 120%;
   text-align: left;
 }
+
 
 .container {
   display: flex;
@@ -128,21 +132,23 @@ main {
   text-align: center;
 }
 
+
 .pixel_art_maker,
 .animal_trading_card,
 .mockup_article {
   width: 100%;
 }
 
+
 .work_name {
   line-height: 0;
   font-size: 180%;
 }
 
+
 .code_link {
   line-height: 200%;
 }
-
 
 /*
  *
@@ -156,10 +162,12 @@ footer {
   width: 100%;
 }
 
+
 footer li {
   display: inline-block;
   margin: 0 1em;
 }
+
 
 footer a {
   text-decoration: none;
