@@ -43,31 +43,30 @@ Enemy.prototype.render = function () {
 
 // Selects a position for the enemy to be in.
 Enemy.prototype.randomEnemyRow = function () {
-    const rows = [60, 144, 228]
-    const rowNumber = Math.floor(Math.random() * rows.length);
+    const ROWS = [60, 144, 228]
+    const ROW_NUMBER = Math.floor(Math.random() * ROWS.length);
 
-    return rows[rowNumber];
+    return ROWS[ROW_NUMBER];
 }
 
 // Looks up the row of an emeny.
 Enemy.prototype.getEnemyRowNumber = function (yValue) {
-    const rowDictionary = {
+    const ROW_DICTIONARY = {
         60: 4,
         144: 3,
         228: 2
     };
 
-    return rowDictionary[yValue];
+    return ROW_DICTIONARY[yValue];
 }
 
 // Generates a random value between lowerBound and upperBound.
 Enemy.prototype.randomNumber = function (lowerBound, upperBound) {
-    const multiplier = upperBound - lowerBound;
-    const randomInteger = Math.floor(Math.random() * multiplier);
-    const finalValue = randomInteger + lowerBound;
+    const MULTIPLIER = upperBound - lowerBound;
+    const RANDOM_INTEGER = Math.floor(Math.random() * MULTIPLIER);
+    const FINAL_VALUE = RANDOM_INTEGER + lowerBound;
 
-    return finalValue;
-    // return 50; // Testing slow speed.
+    return FINAL_VALUE;
 }
 
 // Now write your own player class
@@ -95,14 +94,17 @@ Player.prototype.render = function () {
 };
 
 Player.prototype.handleInput = function (key) {
+    const TILE_WIDTH = 101;
+    const TILE_HEIGHT = 83;
+
     switch (key) {
         case 'up':
-            if (this.y > -41) {
-                this.y -= 84;
+            if (this.y > -36) {
+                this.y -= TILE_HEIGHT;
                 this.row += 1;
             }
 
-            if (this.y == -41) {
+            if (this.y == -36) {
                 alert('Winner!');
 
                 // Move back to player's starting location.
@@ -115,21 +117,21 @@ Player.prototype.handleInput = function (key) {
 
         case 'down':
             if (this.y < 379) {
-                this.y += 84;
+                this.y += TILE_HEIGHT;
                 this.row -= 1;
             }
             break;
 
         case 'left':
             if (this.x > 0) {
-                this.x -= 101;
+                this.x -= TILE_WIDTH;
                 this.col -= 1;
             }
             break;
 
         case 'right':
             if (this.x < 404) {
-                this.x += 101;
+                this.x += TILE_WIDTH;
                 this.col += 1;
             }
             break;
@@ -152,12 +154,12 @@ const player = new Player();
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function (e) {
-    const allowedKeys = {
+    const ALLOWED_KEYS = {
         37: 'left',
         38: 'up',
         39: 'right',
         40: 'down'
     };
 
-    player.handleInput(allowedKeys[e.keyCode]);
+    player.handleInput(ALLOWED_KEYS[e.keyCode]);
 });
