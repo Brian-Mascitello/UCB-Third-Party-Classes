@@ -33,7 +33,8 @@ $(function () {
          */
         it('URLs are defined and not empty', function () {
             allFeeds.forEach(function (feed) {
-                expect(feed.url).toBeDefined();
+                // expect(feed.url).toBeDefined();
+                expect(feed.url).toBeTruthy(); // includes === 0 and undefined.
                 expect(feed.url.length).toBeGreaterThan(0);
             });
         });
@@ -44,7 +45,8 @@ $(function () {
          */
         it('names are defined and not empty', function () {
             allFeeds.forEach(function (feed) {
-                expect(feed.name).toBeDefined();
+                // expect(feed.name).toBeDefined();
+                expect(feed.name).toBeTruthy(); // includes === 0 and undefined.
                 expect(feed.name.length).toBeGreaterThan(0);
             });
         });
@@ -93,14 +95,12 @@ $(function () {
 
         // Check loadFeed function is called and works asynchronously.
         beforeEach(function (done) {
-            loadFeed(0, function () {
-                done();
-            });
+            loadFeed(0, done);
         });
 
         // Verify at least one feed is now in the list.
         it('has been called and has at least one feed', function () {
-            expect($('.feed').children().length).toBeGreaterThan(0);
+            expect($('.feed .entry').children().length).toBeGreaterThan(0);
         });
     });
 

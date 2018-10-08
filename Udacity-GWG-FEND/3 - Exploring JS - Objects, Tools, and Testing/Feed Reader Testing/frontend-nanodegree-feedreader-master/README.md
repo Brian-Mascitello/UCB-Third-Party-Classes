@@ -4,7 +4,7 @@ This is my solution for project 4 - "Feed Reader Testing" of the Udacity FEND 20
 
 ## What did I learn?
 
-Using Jasmine along with JavaScript is a nice was of testing websites to ensure everything is working as intended. From user events to ensuring a list contains items, Jasmine can assist developers in creating stable user experiences and reliable websites.
+Using Jasmine along with JavaScript is a nice way of testing websites to ensure everything is working as intended. From user events to ensuring lists contain items, Jasmine can assist developers in creating stable user experiences and reliable websites.
 
 ## How to Successfully Run this Application
 
